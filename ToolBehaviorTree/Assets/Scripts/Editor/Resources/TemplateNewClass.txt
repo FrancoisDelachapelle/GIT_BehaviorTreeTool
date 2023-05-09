@@ -1,0 +1,22 @@
+using System;
+using UnityEngine;
+
+public class #className : #parentClass
+{
+
+    protected override void StartNode()
+    {
+
+    }
+
+    protected override ENodeReturnStatus ProcessNode()
+    {
+       
+        return ENodeReturnStatus.RUNNING;
+    }
+
+    protected override void StopNode()
+    {
+        
+    }
+}

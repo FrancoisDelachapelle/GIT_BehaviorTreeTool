@@ -1,0 +1,152 @@
+#node-border {
+    background-color: rgb(56, 56, 56);
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#input {
+    align-items: center;
+    justify-content: center;
+    min-width: 15px;
+}
+
+#output {
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    position: relative;
+}
+
+#selection-border {
+    border-left-color: rgb(0, 151, 255);
+    border-right-color: rgb(0, 151, 255);
+    border-top-color: rgb(0, 151, 255);
+    border-bottom-color: rgb(0, 151, 255);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+:hover > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:selected > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:hover:selected > #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.node {
+    min-width: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#title {
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgba(210, 210, 210, 255);
+}
+
+#Description {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+    -unity-text-align: upper-left;
+    white-space: normal;
+    max-width: 150px;
+}
+
+#divider {
+    min-height: 1px;
+    background-color: rgb(144, 137, 137);
+}
+
+.composite #title {
+    background-color: rgb(19, 19, 19);
+    -unity-font-style: bold;
+}
+
+.leaf #title {
+    background-color: rgb(90, 0, 195);
+}
+
+.root #title {
+    background-color: rgb(0, 173, 165);
+    min-height: auto;
+    color: rgba(255, 219, 0, 255);
+    -unity-font-style: bold;
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgba(255, 0, 0, 255);
+}
+
+.decorator #title {
+    background-color: rgb(3, 0, 231);
+}
+
+.root #input {
+    min-height: 20px;
+}
+
+#node-state {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Running #node-state {
+    background-color: rgb(255, 181, 0);
+}
+
+.Success #node-state {
+    background-color: rgb(21, 255, 0);
+}
+
+.Failure #node-state {
+    background-color: rgb(241, 0, 0);
+}
